@@ -1,56 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
     <header class="page-header">
-      <img class="logo" src="#" alt="Логотип интернет магазина "Девайс">
+      <img class="logo" src="#" alt="Логотип интернет магазина " Девайс">
       <nav class="navigation">
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="search-form-input" type="text" name="find" placeholder="Поиск по сайту">
-        <button class="search-form-button" type="submit">Найти</button>
-      </form>
-      <ul class="navigation-list navigation-user" >
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="#">Войти</a>
-        </li>
-      </ul>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="search-form-input" type="text" name="find" placeholder="Поиск по сайту">
+          <button class="search-form-button" type="submit">Найти</button>
+        </form>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Войти</a>
+          </li>
+        </ul>
 
-      <ul class="navigation-list navigation-user" >
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="#">Сравнить</a>
-        </li>
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="navigation-list" >
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="catalog.html">Каталог товаров</a>
-        </li>
-      </ul>
-      <ul class="navigation-list  ???" >
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="???">Доставка</a>
-        </li>
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="???">Гарантия</a>
-        </li>
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="???">Контакты</a>
-        </li>
-      </ul>
-                  <!-- Куда должны вести ссылки с вопросами? Это навигация по главной странице?
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="catalog.html">Каталог товаров</a>
+          </li>
+        </ul>
+        <ul class="navigation-list  ???">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="???">Доставка</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="???">Гарантия</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="???">Контакты</a>
+          </li>
+        </ul>
+        <!-- Куда должны вести ссылки с вопросами? Это навигация по главной странице?
                   Стили в навигации явно отличаются как назвать класс?-->
 
-    </nav>
+      </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Интренет-магазин "Девайс"</h1>
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Товары месяца</h2>
+        <img class="slider-image" src="#" alt="Квадракоптер">
+        <button class="slider-button slider-button-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-button-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <b>
+          <p class="slider-promo-title">Порхает как бабочка,
+            жалит как пчела!</p>
+        </b>
+        <p class="slider-promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+        </p>
+        <a class="slider-promo-button button" href="catalog.html">Подробнее</a>
 
+        <table class="slader-promo-features-table">
+          <tr class="slader-promo-features-table_item">
+            <td class="slader-promo-features-name">Дальность полета</td>
+            <td class="slader-promo-features-description"><b>800 м</b></td>
+          </tr>
+          <tr class="slader-promo-features-table_item">
+            <td class="slader-promo-features-name">Радиус поражения</td>
+            <td class="slader-promo-features-description"><b>50 м</b></td>
+          </tr>
+        </table>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
 
+        </ol>
+
+      </section>
+      <section class="main-page-popular-categories">
+        <h2 class="visually-hidden">Популярные категории товаров</h2>
+        <ul class="popular-categories-list">
+          <li class="popular-categories-item">
+            <a class="popular-category-link" href="catalog.html" >
+              <div class="image-wrapper">
+                <img src="#" alt="???">
+              </div>
+              <span class="popular-category-link-text">Виртуальная
+                реальность</span>
+            </a>
+          </li>
+          <li class="popular-categories-item">
+            <a class="popular-category-link" href="catalog.html" >
+              <div class="image-wrapper">
+                <img src="#" alt="???">
+              </div>
+              <span class="popular-category-link-text">Моноподы
+                для селфи</span>
+            </a>
+          </li>
+          <li class="popular-categories-item">
+            <a class="popular-category-link" href="catalog.html" >
+              <div class="image-wrapper">
+                <img src="#" alt="???">
+              </div>
+              <span class="popular-category-link-text">Экшн-камеры</span>
+            </a>
+          </li>
+          <li class="popular-categories-item">
+            <a class="popular-category-link" href="catalog.html" >
+              <div class="image-wrapper">
+                <img src="#" alt="???">
+              </div>
+              <span class="popular-category-link-text">Фитнес-браслеты</span>
+            </a>
+          </li>
+          <li class="popular-categories-item">
+            <a class="popular-category-link" href="catalog.html" >
+              <div class="image-wrapper">
+                <img src="#" alt="???">
+              </div>
+              <span class="popular-category-link-text">Умные часы</span>
+            </a>
+          </li>
+          <li class="popular-categories-item">
+            <a class="popular-category-link" href="catalog.html" >
+              <div class="image-wrapper">
+                <img src="#" alt="???">
+              </div>
+              <span class="popular-category-link-text">Квадрокоптеры</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main-servises">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="services-controls-buttons-wrapper">
+          <button class="services-controls-buttons service-controls-button-current">Доставка</button>
+          <button class="services-controls-buttons button">Гарантия</button>
+          <button class="services-controls-buttons button">Кредит</button>
+        </div>
+        <dl class="services-description-list">
+          <dt class="services-description-title">Доставка</dt>
+          <dd class="services-description">Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно! Ведь
+            мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+
+        </dl>
+      </section>
     </main>
   </body>
+
 </html>
