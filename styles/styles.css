@@ -41,7 +41,7 @@ body {
   background-color: #FFE17F;
 }
 
-.navigation-list-link  {
+.navigation-user-link  {
   font-weight: 400;
   text-align: center;
   color: inherit;
@@ -49,9 +49,13 @@ body {
   text-decoration: none;
 }
 
-.text-settings {
+.navigation-list-link {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   font-weight: 800;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
   text-transform: uppercase;
 }
