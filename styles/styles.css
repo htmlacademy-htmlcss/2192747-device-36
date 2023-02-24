@@ -36,6 +36,18 @@ body {
   background-color: #FFFFFF;
 }
 
+.button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
 .page-header {
   color: #000000;
   background-color: #FFE17F;
@@ -78,17 +90,6 @@ line-height: 50px;
   color: #444444;
 }
 
-.button {
-  font-family: "Raleway";
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-}
-
 .product-features-name {
   font-size: 16px;
   color: #444444;
@@ -117,9 +118,6 @@ letter-spacing: -0.02em;
   background-color: #F0F0F0;
 }
 
-.services-controls-button {
-  font-size: 18px;
-}
 
 .services-description-title {
 font-family: 'Raleway';
