@@ -129,6 +129,17 @@ line-height: 50px;
 .services-description {
   color: #444444;
 }
+
+.delivery-link {
+  display: block;
+  background-color:#F0F0F0;
+}
+
+.delivery-text {
+  font-size: 20px;
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
