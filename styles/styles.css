@@ -59,3 +59,87 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.slider-number-decoration {
+  font-size: 180px;
+  font-weight: 700;
+  text-align: right;
+  color: #FFFFFF
+}
+
+.slider-promo-title {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+}
+
+.slider-promo-description {
+  color: #444444;
+}
+
+.button {
+  font-family: "Raleway";
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-features-name {
+  font-size: 16px;
+  color: #444444;
+}
+
+.product-features-description b {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.popular-categories-list {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.02em;
+
+}
+
+.popular-category-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-page-servises {
+  background-color: #F0F0F0;
+}
+
+.services-controls-button {
+  font-size: 18px;
+}
+
+.services-description-title {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+}
+
+.services-description {
+  color: #444444;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
