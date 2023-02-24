@@ -36,6 +36,13 @@ body {
   background-color: #FFFFFF;
 }
 
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  }
+
 .button {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -79,12 +86,7 @@ body {
   color: #FFFFFF
 }
 
-.slider-promo-title {
-font-family: 'Raleway';
-font-weight: 800;
-font-size: 50px;
-line-height: 50px;
-}
+
 
 .slider-promo-description {
   color: #444444;
@@ -119,13 +121,6 @@ letter-spacing: -0.02em;
 }
 
 
-.services-description-title {
-font-family: 'Raleway';
-font-weight: 800;
-font-size: 50px;
-line-height: 50px;
-}
-
 .services-description {
   color: #444444;
 }
@@ -135,9 +130,12 @@ line-height: 50px;
   background-color:#F0F0F0;
 }
 
+
+
 .delivery-text {
   font-size: 20px;
 }
+
 
 
 .visually-hidden {
