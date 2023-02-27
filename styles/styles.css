@@ -282,6 +282,7 @@ color: #444444;
   text-align: center;
 }
 
+
 .pagination {
   background-color: #F0F0F0;
 }
@@ -294,6 +295,15 @@ color: #444444;
   opacity: 0.3;
 }
 
+.pagination-disabled {
+  color: #444444;
+  opacity: 0.3;
+}
+
+.pagination-current {
+  color: #444444;
+  opacity: 0.6;
+}
 
 .pagination-link-button {
 font-family: 'Raleway';
