@@ -80,18 +80,16 @@ body {
 
 .page-header {
   display: flex;
+  flex-direction: column;
   width: 1160px;
   margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
   color: #000000;
   background-color: #FFE17F;
 }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
-  width: 1040px;
-  margin: 0 auto;
-}
 
 .header-top-container{
   display: flex;
@@ -121,7 +119,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 1040px;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -227,9 +224,13 @@ body {
   margin: 0;
 }
 
+.main-page-delivery-order {
+  background-color: #F0F0F0;
+  width: 1160px;
+}
+
 .delivery-link {
   display: block;
-  background-color: #F0F0F0;
 }
 
 
@@ -245,10 +246,14 @@ body {
 
 .main-page-about-company {
   width: 520px;
+  padding-right: 23px;
+  box-sizing: border-box;
 }
 
 .contacts {
   width: 532px;
+  padding-right: 34px;
+  box-sizing: border-box;
 }
 
 .about-company-list {
@@ -282,7 +287,7 @@ body {
 }
 
 .subscription-container {
-  width: 1040px;
+  width: 1160px;
   margin: 0 auto;
 }
 
