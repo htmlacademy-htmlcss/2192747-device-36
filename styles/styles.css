@@ -398,6 +398,10 @@ body {
 
 .catalog-right-column {
   width: 840px;
+
+}
+
+.catalog-column {
   padding: 40px;
   box-sizing:border-box;
 }
