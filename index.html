@@ -10,48 +10,44 @@
 
   <body>
     <header class="page-header">
-      <div class="header-container">
-        <div class="header-top-container">
-          <div class="logo-form-wrapper">
-            <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="search-form-input" type="text" name="find" placeholder="Поиск по сайту">
-              <button class="search-form-button" type="submit">Найти</button>
-            </form>
-          </div>
-          <nav class="navigation">
-
-            <ul class="navigation-user">
-              <li class="navigation-user-item position-left">
-                <a class="navigation-user-link" href="#">Войти</a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link" href="#">Сравнить</a>
-              </li>
-              <li class="navigation-user-item">
-
-                <a class="navigation-user-link" href="#"><span class="basket-counter">2</span>Корзина</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
+      <div class="header-top-container">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="search-form-input" type="text" name="find" placeholder="Поиск по сайту">
+          <button class="search-form-button" type="submit">Найти</button>
+        </form>
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="catalog.html">Каталог товаров</a>
+
+          <ul class="navigation-user">
+            <li class="navigation-user-item position-left">
+              <a class="navigation-user-link" href="#">Войти</a>
             </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">Доставка</a>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
             </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">Контакты</a>
+            <li class="navigation-user-item">
+
+              <a class="navigation-user-link" href="#"><span class="basket-counter">2</span>Корзина</a>
             </li>
           </ul>
         </nav>
       </div>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container main-index">
       <div class="page-container">
@@ -69,7 +65,9 @@
             </button>
           </div>
           <div class="slider-img-text">
-            <span class="slider-number-decoration">01</span>
+            <div class="slider-number-wrapper">
+              <span class="slider-number-decoration">01</span>
+            </div>
             <p class="slider-promo-title title"> <b>Порхает как бабочка,
                 жалит как пчела!</b></p>
             <p class="slider-promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
