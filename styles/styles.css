@@ -788,21 +788,21 @@ body {
 
 .product-card {
   display: grid;
-  grid-template-columns: 226px auto;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   row-gap: 32px;
 }
 
+.product-card-image {
+  object-fit: contain;
+}
+
 .product-card-image-link {
-  grid-column: 1/ 3;
+  grid-column: 1/ -1;
 }
 
 .product-card-title-link {
   grid-column: 1/ 2;
-}
-
-
-.product-card-title-link {
   text-decoration: none;
   color: #000000;
 }
@@ -816,6 +816,7 @@ body {
 }
 
 .product-card-price {
+  margin-left: 20px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
