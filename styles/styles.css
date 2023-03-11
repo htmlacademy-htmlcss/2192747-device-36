@@ -789,7 +789,7 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: min-content auto;
   row-gap: 32px;
 }
 
