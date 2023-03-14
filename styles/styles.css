@@ -574,7 +574,8 @@ body {
 
 .delivery-block-logo {
   position: relative;
-  top: 35px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .delivery-text {
@@ -589,12 +590,13 @@ body {
   border-radius: 50%;
   position: absolute;
   right: 43px;
-  top: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .i-icon {
   position: relative;
-  top: 10px;
+  top: 8px;
 }
 
 .index-column {
