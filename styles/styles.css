@@ -256,6 +256,7 @@ body {
 
   .search-form-button:focus-visible {
     outline: 2px solid #AF4FFF;
+
   }
 }
 
@@ -434,7 +435,7 @@ body {
 .slider-button-wrapper {
   position: absolute;
   left: 30px;
-  bottom: 289px;;
+  top: 211px;;
   display: flex;
   justify-content: space-between;
   width: 530px;
@@ -804,15 +805,14 @@ body {
 
 .services-description-list {
   margin: 0;
-  margin-top:auto;
-  margin-bottom:auto;
+  margin-top:90px;
   padding: 0;
   width: 694px;
   box-sizing: border-box;
   background-image: url("../images/servises-description-item/delivery.svg");
   background-repeat: no-repeat;
   background-size: 136px 167px;
-  background-position: center right;
+  background-position: 100% 0;
 }
 
 .services-description-title {
@@ -1100,11 +1100,11 @@ body {
 
  .subscription-input:focus {
   background-color: #DCDCDC;
-  border: none;
+  outline: none;
  }
 
  .subscription-input:focus {
-  outline: none;
+  background-color: #DCDCDC;
 }
 
 @supports selector(:focus-visible) {
@@ -1114,6 +1114,7 @@ body {
   }
 
   .subscription-input:focus-visible {
+    background-color: #DCDCDC;
     outline: none;
   }
 }
@@ -1571,6 +1572,8 @@ body {
   box-sizing: border-box;
 }
 
+
+
 .catalog-adjustment-heading {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1579,15 +1582,130 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+}
+
+.filter-heading{
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-title {
+  margin-top: 10px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #000000;
 }
+
+.price-title {
+  margin-bottom: 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #EBEBEB;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.range-toggle:active {
+  border: 2px solid #000000;
+  background: #000000;
+}
+
+.range-toggle:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+@supports selector(:focus-visible) {
+
+  .range-toggle:focus {
+    outline: none;
+  }
+
+  .range-toggle:focus-visible {
+    outline: 2px solid #AF4FFF;
+  }
+}
+
+.toggle-min {
+  top: -8px;
+  left: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -8px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-left: -15px;
+  padding-right: 48px;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 15px;
+  padding: 0 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-filter-label {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
 
 .filter-button {
   background-color: rgba(240, 240, 240, 0);
@@ -1702,12 +1820,10 @@ body {
 .product-card-image {
   display: block;
   object-fit: contain;
-}
-
-.product-card-image-link {
   grid-column: 1/ -1;
   position: relative;
 }
+
 
 .product-card-title-link {
   grid-column: 1/ 2;
@@ -1893,7 +2009,7 @@ body {
 
 
 .footer-logo-link:hover svg {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .footer-logo-link:active svg {
