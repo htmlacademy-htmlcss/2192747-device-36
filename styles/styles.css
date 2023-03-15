@@ -191,7 +191,6 @@ body {
 
 .search-form-input:focus {
   outline: 2px solid #AF4FFF;
-  outline-offset: 3px;
 }
 
 @supports selector(:focus-visible) {
@@ -213,6 +212,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.search-form-input:disabled {
+  opacity: 0.3;
+}
+
 
 
 .search-form-button {
@@ -229,6 +232,31 @@ body {
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   background-color: #FFE17F;
+}
+
+.search-form-button:hover  {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.search-form-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+@supports selector(:focus-visible) {
+
+  .search-form-button:focus {
+    outline: none;
+  }
+
+  .search-form-button:focus-visible {
+    outline: 2px solid #AF4FFF;
+  }
 }
 
 .navigation-user {
