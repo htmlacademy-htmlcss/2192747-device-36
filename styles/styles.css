@@ -414,6 +414,7 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
+
 .catalog-list-icon {
   fill: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -1161,6 +1162,8 @@ body {
   background-color: #F0F0F0;
   border: 3px solid #C4C4C4;
   line-height: 21px;
+  padding-left: 37px;
+  padding-right: 37px;
 }
 
 .subscription-button:hover {
@@ -1667,6 +1670,7 @@ body {
   height: 20px;
   border-radius: 50%;
   border: 2px solid #CCCCCC;
+  box-sizing:border-box;
 }
 
 .control-input[type="radio"]:checked + .control-mark-bluetooth::before,
@@ -1687,6 +1691,8 @@ body {
 .control:hover {
   opacity: 0.6;
 }
+
+control:hover
 
 .control:active {
   opacity: 0.3;
@@ -1829,6 +1835,7 @@ body {
   height: 20px;
   border: 2px solid #CCCCCC;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .control-bluetooth {
@@ -1994,23 +2001,6 @@ body {
   justify-content: space-between;
 }
 
-
-
-
-
-.product-card-image-link {
- /*  display: block;
-  object-fit: contain;
-  grid-column: 1/ -1;
-  position: relative; */
-}
-
-
-.product-card-title-link {
-  /* grid-column: 1/ 2;
-  text-decoration: none;
-  color: #000000; */
-}
 
 .product-card-title {
   margin: 0;
