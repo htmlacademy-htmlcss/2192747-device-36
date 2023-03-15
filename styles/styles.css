@@ -1654,7 +1654,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 5px;
+  left: 0;
   right: 0;
   margin: auto;
   content: url("../images/sort-tick.svg");
@@ -1663,8 +1663,8 @@ body {
 .control-mark-bluetooth {
   position: absolute;
   top: 0;
-  bottom: -2px;
-  left: -4px;
+  bottom: 0;
+  left: 0;
   margin: auto;
   width: 20px;
   height: 20px;
@@ -1692,7 +1692,7 @@ body {
   opacity: 0.6;
 }
 
-control:hover
+.control:hover
 
 .control:active {
   opacity: 0.3;
@@ -1828,14 +1828,13 @@ control:hover
 .control-mark {
   position: absolute;
   top: 0;
-  bottom: -2px;
-  left: -4px;
+  bottom: 0;
+  left: 0;
   margin: auto;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #CCCCCC;
   border-radius: 3px;
-  box-sizing: border-box;
 }
 
 .control-bluetooth {
