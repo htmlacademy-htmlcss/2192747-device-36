@@ -363,18 +363,14 @@ body {
   cursor: pointer;
   border: none;
   background-color: #FFFFFF;
-}
-
-.slider-button-prev {
   background-image: url("../images/sliger-image/slider-button-prev.svg");
   background-repeat: no-repeat;
   background-size: 20px 60px;
+  background-position: center;
 }
 
 .slider-button-next {
-  background-image: url("../images/sliger-image/slider-button-next.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 60px;
+  transform: rotate(180deg);
 }
 
 .slider-button:hover {
