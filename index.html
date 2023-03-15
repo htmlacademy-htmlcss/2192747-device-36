@@ -14,7 +14,8 @@
         <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
         <div class="header-top-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-form-input" type="text" name="find" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input class="search-form-input" type="text" id="search" name="find" placeholder="Поиск по сайту">
             <button class="search-form-button" type="submit">Найти</button>
           </form>
           <nav class="navigation">
@@ -304,12 +305,12 @@
       </div>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="subscription-container">
-          <h2 class="subscription-title title">Подпишитесь
-            на рассылку</h2>
+          <label class="subscription-title title for="subscription-fild">Подпишитесь
+            на рассылку</label>
           <p class="subscription-top-text">Еженедельный дайджест с обзорами новинок, <br>
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <div class="subscription-bottom-wrapper">
-            <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="subscription-input" type="email" id="subscription-fild" name="email" placeholder="Ваш e-mail">
             <button class="subscription-button button button-grey-border" type="submit">Подписаться</button>
             <p class="subscription-bottom-text">Это бесплатно</p>
           </div>
