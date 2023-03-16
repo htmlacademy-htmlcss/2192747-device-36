@@ -1649,14 +1649,25 @@ body {
   top:-45px;
 }
 
+.control-mark {
+  position: absolute;
+  top: 1;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3px;
   content: url("../images/sort-tick.svg");
 }
 
@@ -1825,17 +1836,6 @@ body {
   margin-bottom: 17px;
 }
 
-.control-mark {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #CCCCCC;
-  border-radius: 3px;
-}
 
 .control-bluetooth {
   margin-bottom: 20px;
