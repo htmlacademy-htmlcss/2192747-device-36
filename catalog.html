@@ -21,7 +21,7 @@
         <div class="header-top-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input class="search-form-input" type="text" name="find" placeholder="Поиск по сайту">
+            <input class="search-form-input" type="text" id="search" name="find" placeholder="Поиск по сайту">
             <button class="search-form-button" type="submit">Найти</button>
           </form>
           <nav class="navigation">
@@ -41,7 +41,7 @@
               <li class="navigation-user-item">
                 <a class="navigation-user-link compare-button" href="#">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" focusable="false" width="10" height="12" viewBox="0 0 10 12" fill="currentColor">
+                    width="10" height="12" viewBox="0 0 10 12" fill="currentColor">
                     <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" /></svg>
                   Сравнить</a>
               </li>
@@ -53,6 +53,38 @@
                       d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" />
                   </svg>
                   Корзина</a>
+                <div class="popover popover-cart popover-open">
+                  <div class="popover-content">
+                    <ul class="basket-products-list">
+                      <li class="basket-products-item">
+                        <a href="#" class="basket-product-link">
+                          <div class="basket-product-wrapper">
+                            <img class="basket-product-img" src="images/basket/basket-image-1.jpg" width="39"
+                              height="43" alt="Уменьшенная копия фотографии любительской селфи-палки.">
+                            <h3 class="basket-product-title">Любительская <br> селфи-палка</h3>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="basket-products-item">
+                        <a href="#" class="basket-product-link">
+                          <div class="basket-product-wrapper">
+                            <img class="basket-product-img" src="images/basket/basket-image-2.jpg" width="39"
+                              height="43" alt="Уменьшенная копия фотографии профессиональной селфи-палки.">
+                            <h3 class="basket-product-title">Профессиональная <br>
+                              селфи-палка</h3>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <dl class="basket-prise-counter">
+                      <dt class="basket-prise-item products-counter">Товаров:</dt>
+                      <dd class="basket-prise-description">2</dd>
+                      <dt class="basket-prise-item price">Сумма:</dt>
+                      <dd class="basket-prise-description">2000 ₽</dd>
+                    </dl>
+                    <a class="basket-popover-link" href="#">Открыть корзину</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </nav>
@@ -60,11 +92,21 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-list-item item-left">
-              <a class="navigation-list-link " href="catalog.html">Каталог товаров <span class="navigation-list-link-catalog">
-                <svg class="catalog-list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                viewBox="0 0 16 16" fill="currentColor">
-                <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" /></svg></span>
+              <a class="navigation-list-link " href="catalog.html">Каталог товаров <span class="catalog-icon-wrapper">
+                  <svg class="catalog-list-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" /></svg></span>
               </a>
+              <ul class="header-subcatalog">
+                <li class="subcatalog-item"><a href="#" class="subcatalog-link">Виртуальная реальность</a>
+                </li>
+                <li class="subcatalog-item"><a href="#" class="subcatalog-link">Фитнес-браслеты</a></li>
+                <li class="subcatalog-item"><a href="#" class="subcatalog-link">Квадрокоптеры</a></li>
+                <li class="subcatalog-item"><a href="#" class="subcatalog-link">Моноподы для cелфи</a></li>
+                <li class="subcatalog-item"><a href="#" class="subcatalog-link">Умные часы</a></li>
+                <li class="subcatalog-item subcatalog-item-position"><a href="#" class="subcatalog-link">Экшн-камеры</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-link" href="#">Доставка</a>
@@ -77,9 +119,9 @@
             </li>
           </ul>
         </nav>
+      </div>
     </header>
     <main class="main-container main-inner">
-
       <header class="inner-header">
         <div class="inner-header-container">
           <div class="inner-header-align">
@@ -103,75 +145,73 @@
           <div class="catalog-filter-container">
             <h2 class="catalog-adjustment-heading filter-heading">Фильтр:</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
               <fieldset class="catalog-filter-group range-group">
                 <legend class="catalog-filter-title price-title">Стоимость</legend>
-
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 119px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
-
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                      от <input class="range-input" type="number" value="0" name="min-price">
+                      <span class="number-filter-wrapper">от</span> <input class="range-input" type="number" value="0"
+                        name="min-price">
                     </label>
                     <label class="catalog-filter-label">
-                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                      <span class="number-filter-wrapper">до</span> <input class="range-input" type="number"
+                        value="5000" name="max-price" style="width: 37px">
                     </label>
                   </div>
                 </div>
               </fieldset>
-
-              <fieldset class="catalog-filter-group filter-group-color ">
+              <fieldset class="catalog-filter-group filter-group-color">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <label class="control control-color">
                   <input class="control-input visually-hidden " type="checkbox" name="black" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">
-                  Черный</span>
+                    Черный</span>
                 </label>
-                <label class="control control-color filter-group-color">
+                <label class="control control-color">
                   <input class="control-input visually-hidden " type="checkbox" name="white" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">
-                  Белый</span>
+                    Белый</span>
                 </label>
-                <label class="control control-color filter-group-color">
+                <label class="control control-color">
                   <input class="control-input visually-hidden " type="checkbox" name="blue">
                   <span class="control-mark"></span>
                   <span class="control-label">
-                  Синий</span>
+                    Синий</span>
                 </label>
-                <label class="control control-color filter-group-color">
+                <label class="control control-color">
                   <input class="control-input visually-hidden " type="checkbox" name="red">
                   <span class="control-mark"></span>
                   <span class="control-label">
-                  Красный</span>
+                    Красный</span>
                 </label>
-                <label class="control control-color filter-group-color">
+                <label class="control control-color">
                   <input class="control-input visually-hidden" type="checkbox" name="pink">
                   <span class="control-mark"></span>
                   <span class="control-label">
-                  Розовый</span>
+                    Розовый</span>
                 </label>
               </fieldset>
               <fieldset class="catalog-filter-group filter-group-bluetooth">
                 <legend class="catalog-filter-title">Bluetooth</legend>
                 <label class="control control-bluetooth">
-                  <input class="control-input visually-hidden" type="radio" name="product-group" checked>
+                  <input class="control-input visually-hidden" type="radio" name="product-group" value="yes" checked>
                   <span class="control-mark-bluetooth"></span>
                   <span class="control-label-bluetooth">Есть</span>
                 </label>
                 <label class="control control-bluetooth">
-                  <input class="control-input visually-hidden" type="radio" name="product-group">
+                  <input class="control-input visually-hidden" type="radio" name="product-group" value="no">
                   <span class="control-mark-bluetooth"></span>
                   <span class="control-label-bluetooth">Нет</span>
                 </label>
@@ -204,82 +244,90 @@
                 </li>
               </ul>
             </div>
-
             <div class="products-column">
               <ul class="product-list">
                 <li class="product-card">
                   <a class="product-card-link" href="product.html">
+                    <div class="description-link-wrapper">
+                      <span class="product-description product-description-link button">Подробнее</span>
+                    </div>
                     <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380" alt="Любительская
               селфи-палка.">
                     <div class="product-title-wrapper">
                       <h3 class="product-card-title">Любительская <br>
                         селфи-палка</h3>
+                      <b class="product-card-price">500 ₽</b>
+                    </div>
                   </a>
-                  <b class="product-card-price">500 ₽</b>
-            </div>
-            </li>
-            <li class="product-card">
-              <a class="product-card-link"" href=" product.html">
-                <img class="product-card-image" src="images/catalog/product-2-1.jpg" width="360" height="380"
-                  alt="Профессиональная селфи-палка.">
-                <div class="product-title-wrapper">
-                  <h3 class="product-card-title">Профессиональная <br> селфи-палка </h3>
-              </a>
-              <b class="product-card-price">1 500 ₽</b>
-          </div>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link"" href=" product.html">
-              <img class="product-card-image" src="images/catalog/product-2-2.jpg" width="360" height="380" alt="Непотопляемая
+                </li>
+                <li class="product-card pro-selfie">
+                  <a class="product-card-link" href=" product.html">
+                    <div class="description-link-wrapper">
+                      <span class="product-description product-description-link button">Подробнее</span>
+                    </div>
+                    <img class="product-card-image" src="images/catalog/product-2-1.jpg" width="360" height="380"
+                      alt="Профессиональная селфи-палка.">
+                    <div class="product-title-wrapper">
+                      <h3 class="product-card-title">Профессиональная <br> селфи-палка </h3>
+                      <b class="product-card-price">1 500 ₽</b>
+                    </div>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link" href=" product.html">
+                    <div class="description-link-wrapper">
+                      <span class="product-description product-description-link button">Подробнее</span>
+                    </div>
+                    <img class="product-card-image" src="images/catalog/product-2-2.jpg" width="360" height="380" alt="Непотопляемая
               селфи-палка.">
-              <div class="product-title-wrapper">
-                <h3 class="product-card-title">Непотопляемая <br>
-                  селфи-палка</h3>
-            </a>
-            <b class="product-card-price">2 500 ₽</b>
-      </div>
-      </li>
-      <li class="product-card">
-        <a class="product-card-link" href="product.html">
-          <img class="product-card-image" src="images/catalog/product-2-3.jpg" width="360" height="380"
-            alt="Селфи-палка «Следуй за мной».">
-          <div class="product-title-wrapper">
-            <h3 class="product-card-title">Селфи-палка «Следуй <br> за мной»</h3>
-        </a>
-        <b class="product-card-price">1 500 ₽</b>
-        </div>
-      </li>
-      </ul>
-
-      <button class="show-more button button-grey-border" type="button">Загрузить ещё</button>
-
-      <ul class="pagination">
-        <li class="pagination-item pagination-prev">
-          <a class="pagination-link-button pagination-disabled">Назад</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">15</a>
-        </li>
-        <li class="pagination-item pagination-next">
-          <a class="pagination-link-button" href="#">Вперёд</a>
-        </li>
-      </ul>
-      </div>
-      </div>
-      </section>
-      </div>
+                    <div class="product-title-wrapper">
+                      <h3 class="product-card-title">Непотопляемая <br>
+                        селфи-палка</h3>
+                      <b class="product-card-price">2 500 ₽</b>
+                    </div>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link" href="product.html">
+                    <div class="description-link-wrapper">
+                      <span class="product-description product-description-link button">Подробнее</span>
+                    </div>
+                    <img class="product-card-image" src="images/catalog/product-2-3.jpg" width="360" height="380"
+                      alt="Селфи-палка «Следуй за мной».">
+                    <div class="product-title-wrapper">
+                      <h3 class="product-card-title">Селфи-палка «Следуй <br> за мной»</h3>
+                      <b class="product-card-price">1 500 ₽</b>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <button class="show-more button button-grey-border" type="button">Загрузить ещё</button>
+              <ul class="pagination">
+                <li class="pagination-item pagination-prev">
+                  <a class="pagination-link-button pagination-disabled">Назад</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+                <li class="pagination-item pagination-next">
+                  <a class="pagination-link-button" href="#">Вперёд</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="page-footer">
@@ -352,7 +400,6 @@
             <address class="footer-contacts">
               <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             </address>
-
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
               <svg class="htmlacademy-link-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="115" height="33" viewBox="0 0 115 33" fill="currentColor">
@@ -363,12 +410,8 @@
             </a>
           </div>
         </div>
-
       </div>
-
     </footer>
-
-
   </body>
 
 </html>
